@@ -11,17 +11,17 @@ public abstract class BaseService<T> {
   @Autowired
   private BaseRepository<T> repositoryBase;
 
-  public List<T> getAll() {
+  public List<T> findAll() {
     List<T> T = (List<T>) repositoryBase.findAll();
     return T;
   }
 
-  public T getById(Long id) {
+  public T findById(Long id) {
     Optional<T> optional = repositoryBase.findById(id);
     return optional.orElse(null);
   }
 
-  public T create(T Object) {
+  public T save(T Object) {
     return repositoryBase.save(Object);
   }
 

@@ -26,20 +26,20 @@ public abstract class BaseEntity {
 
   @Column(updatable = false, name = "created_at")
   @DateTimeFormat(pattern = "yyyy-MM-dd")
-  protected Date createdAt;
+  protected Date creadoEn;
 
   @Column(name = "updated_at")
   @DateTimeFormat(pattern = "yyyy-MM-dd")
-  protected Date updatedAt;
+  protected Date actualizadoEn;
 
   @PrePersist
   protected void onCreate() {
-    this.createdAt = new Date();
-    this.updatedAt = new Date();
+    this.creadoEn = new Date();
+    this.actualizadoEn = new Date();
   }
 
   @PreUpdate
   protected void onUpdate() {
-    this.updatedAt = new Date();
+    this.actualizadoEn = new Date();
   }
 }
