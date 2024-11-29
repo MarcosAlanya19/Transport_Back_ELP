@@ -1,11 +1,10 @@
 package com.transport.management.repositories;
 
-import com.transport.management.entities.VehiculoEntity;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
 import java.util.List;
 
-public interface VehiculoRepository extends JpaRepository<VehiculoEntity, Long> {
+import com.transport.management.entities.VehiculoEntity;
+import com.transport.management.utils.abtractBase.BaseRepository;
+
+public interface VehiculoRepository extends BaseRepository<VehiculoEntity> {
     List<VehiculoEntity> findByEnServicio(boolean enServicio);
 }

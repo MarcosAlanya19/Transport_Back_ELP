@@ -1,12 +1,9 @@
 package com.transport.management.services;
 
-import java.util.List;
+import org.springframework.stereotype.Service;
 
 import com.transport.management.entities.ClienteEntity;
+import com.transport.management.utils.abtractBase.BaseService;
 
-public interface ClienteService {
-    List<ClienteEntity> findAll();
-    ClienteEntity findById(Long id);
-    ClienteEntity save(ClienteEntity cliente);
-    void deleteById(Long id);
-}
+@Service
+public class ClienteService extends BaseService<ClienteEntity> {}

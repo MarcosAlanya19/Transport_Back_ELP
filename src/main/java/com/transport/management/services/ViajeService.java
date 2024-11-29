@@ -1,14 +1,21 @@
 package com.transport.management.services;
 
-import com.transport.management.entities.ViajeEntity;
-
 import java.time.LocalDateTime;
 import java.util.List;
 
-public interface ViajeService {
-    List<ViajeEntity> findAll();
-    ViajeEntity findById(Long id);
-    ViajeEntity save(ViajeEntity viaje);
-    void deleteById(Long id);
-    List<ViajeEntity> findByFechaHoraSalidaAfter(LocalDateTime fechaHora);
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.transport.management.entities.ViajeEntity;
+import com.transport.management.repositories.ViajeRepository;
+import com.transport.management.utils.abtractBase.BaseService;
+
+@Service
+public class ViajeService extends BaseService<ViajeEntity> {
+  @Autowired
+  ViajeRepository viajeRepository;
+
+  public List<ViajeEntity> findByFechaHoraSalidaAfter(LocalDateTime fechaHora) {
+    return viajeRepository.findByFechaHoraSalidaAfter(fechaHora);
+  }
 }

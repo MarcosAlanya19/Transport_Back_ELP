@@ -1,13 +1,20 @@
 package com.transport.management.services;
 
-import com.transport.management.entities.VehiculoEntity;
-
 import java.util.List;
 
-public interface VehiculoService {
-    List<VehiculoEntity> findAll();
-    VehiculoEntity findById(Long id);
-    VehiculoEntity save(VehiculoEntity vehiculo);
-    void deleteById(Long id);
-    List<VehiculoEntity> findByEnServicio(boolean enServicio);
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.transport.management.entities.VehiculoEntity;
+import com.transport.management.repositories.VehiculoRepository;
+import com.transport.management.utils.abtractBase.BaseService;
+
+@Service
+public class VehiculoService extends BaseService<VehiculoEntity> {
+  @Autowired
+  VehiculoRepository vehiculoRepository;
+
+  public List<VehiculoEntity> findByEnServicio(boolean enServicio) {
+    return vehiculoRepository.findByEnServicio(enServicio);
+  }
 }

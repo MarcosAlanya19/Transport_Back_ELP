@@ -1,14 +1,20 @@
 package com.transport.management.services;
 
-
-import com.transport.management.entities.ConductorEntity;
-
 import java.util.List;
 
-public interface ConductorService {
-    List<ConductorEntity> findAll();
-    ConductorEntity findById(Long id);
-    ConductorEntity save(ConductorEntity conductorEntity);
-    void deleteById(Long id);
-    List<ConductorEntity> findByDisponible(boolean disponible);
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.transport.management.entities.ConductorEntity;
+import com.transport.management.repositories.ConductorRepository;
+import com.transport.management.utils.abtractBase.BaseService;
+
+@Service
+public class ConductorService extends BaseService<ConductorEntity> {
+  @Autowired
+  ConductorRepository conductorRepository;
+
+  public List<ConductorEntity> findByDisponible(boolean disponible) {
+    return conductorRepository.findByDisponible(disponible);
+  }
 }
