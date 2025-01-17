@@ -1,12 +1,10 @@
-package com.transport.management.services;
+package com.transport.management.modules.vehiculo;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.transport.management.entities.VehiculoEntity;
-import com.transport.management.repositories.VehiculoRepository;
 import com.transport.management.utils.abtractBase.BaseService;
 
 @Service

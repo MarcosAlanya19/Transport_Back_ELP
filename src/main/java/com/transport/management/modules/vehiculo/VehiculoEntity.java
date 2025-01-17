@@ -1,4 +1,4 @@
-package com.transport.management.entities;
+package com.transport.management.modules.vehiculo;
 
 import com.transport.management.utils.abtractBase.BaseEntity;
 

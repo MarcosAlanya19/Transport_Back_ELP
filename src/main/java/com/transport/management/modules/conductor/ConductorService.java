@@ -9,11 +9,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.transport.management.entities.VehiculoEntity;
 import com.transport.management.modules.conductor.request.ConductorRequest;
 import com.transport.management.modules.conductor.response.ConductorResponse;
 import com.transport.management.modules.conductor.response.VehiculoResponse;
-import com.transport.management.repositories.VehiculoRepository;
+import com.transport.management.modules.vehiculo.VehiculoEntity;
+import com.transport.management.modules.vehiculo.VehiculoRepository;
 
 import jakarta.transaction.Transactional;
 

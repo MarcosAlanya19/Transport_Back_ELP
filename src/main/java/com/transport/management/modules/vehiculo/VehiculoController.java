@@ -1,4 +1,4 @@
-package com.transport.management.controllers;
+package com.transport.management.modules.vehiculo;
 
 import java.util.List;
 
@@ -11,9 +11,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.transport.management.entities.VehiculoEntity;
-import com.transport.management.services.VehiculoService;
 
 @RestController
 @RequestMapping("/vehiculos")
