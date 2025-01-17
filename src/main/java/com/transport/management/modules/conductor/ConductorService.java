@@ -73,7 +73,7 @@ public class ConductorService {
       VehiculoEntity vehiculo = vehiculoRepository.findById(vehiculoId)
           .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Vehículo no encontrado"));
       conductor.setVehiculo(vehiculo);
-      // vehiculo.setConductor(conductor);
+      vehiculo.setConductor(conductor);
     }
 
     return conductorRepository.save(conductor);
@@ -118,7 +118,7 @@ public class ConductorService {
 
     if (conductor.getVehiculo() != null) {
       VehiculoEntity vehiculo = conductor.getVehiculo();
-      // vehiculo.setConductor(null);
+      vehiculo.setConductor(null);
       conductor.setVehiculo(null);
 
       if (vehiculo.getId() != null) {
@@ -155,7 +155,7 @@ public class ConductorService {
           .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Vehículo no encontrado"));
 
       conductor.setVehiculo(vehiculo);
-      // vehiculo.setConductor(conductor);
+      vehiculo.setConductor(conductor);
     }
 
     return conductorRepository.save(conductor);
