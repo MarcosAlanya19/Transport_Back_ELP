@@ -1,12 +1,10 @@
-package com.transport.management.services;
+package com.transport.management.modules.conductor;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.transport.management.modules.conductor.ConductorEntity;
-import com.transport.management.modules.conductor.ConductorRepository;
 import com.transport.management.utils.abtractBase.BaseService;
 
 @Service
