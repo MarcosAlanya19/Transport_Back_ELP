@@ -1,4 +1,4 @@
-package com.transport.management.controllers;
+package com.transport.management.modules.conductor;
 
 import java.util.List;
 
