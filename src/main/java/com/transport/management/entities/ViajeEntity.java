@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+import com.transport.management.modules.conductor.ConductorEntity;
 import com.transport.management.utils.abtractBase.BaseEntity;
 
 @Entity

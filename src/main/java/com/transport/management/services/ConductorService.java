@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.transport.management.entities.ConductorEntity;
+import com.transport.management.modules.conductor.ConductorEntity;
 import com.transport.management.repositories.ConductorRepository;
 import com.transport.management.utils.abtractBase.BaseService;
 
