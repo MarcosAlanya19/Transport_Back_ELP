@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.transport.management.entities.UsuarioEntity;
+import com.transport.management.modules.usuario.UsuarioEntity;
 import com.transport.management.services.UsuarioService;
 
 @RestController

@@ -1,4 +1,4 @@
-package com.transport.management.entities;
+package com.transport.management.modules.usuario;
 
 import com.transport.management.enums.RoleEnum;
 import com.transport.management.utils.abtractBase.BaseEntity;

@@ -1,5 +1,6 @@
 package com.transport.management.entities;
 
+import com.transport.management.modules.usuario.UsuarioEntity;
 import com.transport.management.utils.abtractBase.BaseEntity;
 
 import jakarta.persistence.Column;
