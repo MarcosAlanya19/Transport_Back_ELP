@@ -37,7 +37,7 @@ public class ReniecService {
       if (reniecResponse != null) {
         ClienteEntity cliente = new ClienteEntity();
         cliente.setDni(dni);
-        cliente.setNombre(reniecResponse.getNombres());
+        cliente.setNombres(reniecResponse.getNombres());
         cliente.setApellidos(reniecResponse.getApellidoPaterno() + " " + reniecResponse.getApellidoMaterno());
         return cliente;
       } else {
