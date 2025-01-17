@@ -1,5 +1,6 @@
 package com.transport.management.entities;
 
+import com.transport.management.modules.usuario.UsuarioEntity;
 import com.transport.management.utils.abtractBase.BaseEntity;
 
 import jakarta.persistence.Column;
@@ -18,17 +19,20 @@ import lombok.Setter;
 @NoArgsConstructor
 public class ClienteEntity extends BaseEntity {
 
+  @Column(nullable = false, length = 8)
+  private String dni;
+
   @Column(nullable = false, length = 100)
-  private String nombre;
+  private String nombres;
+
+  @Column(nullable = false, length = 100)
+  private String apellidos;
 
   @Column(unique = true, length = 100)
   private String email;
 
   @Column(length = 15)
   private String telefono;
-
-  private String dni;
-  private String apellidos;
 
   @Column(length = 255)
   private String direccion;

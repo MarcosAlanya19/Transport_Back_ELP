@@ -1,6 +1,5 @@
-package com.transport.management.repositories;
+package com.transport.management.modules.usuario;
 
-import com.transport.management.entities.UsuarioEntity;
 import com.transport.management.utils.abtractBase.BaseRepository;
 import org.springframework.stereotype.Repository;
 
