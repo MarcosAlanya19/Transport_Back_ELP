@@ -1,8 +1,7 @@
-package com.transport.management.services;
+package com.transport.management.modules.usuario;
 
 import org.springframework.stereotype.Service;
 
-import com.transport.management.modules.usuario.UsuarioEntity;
 import com.transport.management.utils.abtractBase.BaseService;
 
 @Service
