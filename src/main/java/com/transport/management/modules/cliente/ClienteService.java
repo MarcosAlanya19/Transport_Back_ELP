@@ -1,8 +1,7 @@
-package com.transport.management.services;
+package com.transport.management.modules.cliente;
 
 import org.springframework.stereotype.Service;
 
-import com.transport.management.entities.ClienteEntity;
 import com.transport.management.utils.abtractBase.BaseService;
 
 @Service

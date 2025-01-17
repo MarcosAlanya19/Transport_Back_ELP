@@ -1,4 +1,4 @@
-package com.transport.management.controllers;
+package com.transport.management.modules.cliente;
 
 import java.util.List;
 
@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.transport.management.entities.ClienteEntity;
-import com.transport.management.services.ClienteService;
 import com.transport.management.services.ReniecService;
 
 @RestController

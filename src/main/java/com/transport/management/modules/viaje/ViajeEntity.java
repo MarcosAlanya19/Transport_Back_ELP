@@ -4,9 +4,9 @@ import java.time.LocalDateTime;
 import java.util.Random;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.transport.management.entities.ClienteEntity;
 import com.transport.management.entities.RutaEntity;
 import com.transport.management.enums.StatusViajeEnum;
+import com.transport.management.modules.cliente.ClienteEntity;
 import com.transport.management.modules.conductor.ConductorEntity;
 import com.transport.management.utils.abtractBase.BaseEntity;
 
