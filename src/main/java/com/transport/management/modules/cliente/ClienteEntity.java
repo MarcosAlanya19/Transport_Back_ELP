@@ -1,4 +1,4 @@
-package com.transport.management.entities;
+package com.transport.management.modules.cliente;
 
 import com.transport.management.modules.usuario.UsuarioEntity;
 import com.transport.management.utils.abtractBase.BaseEntity;
