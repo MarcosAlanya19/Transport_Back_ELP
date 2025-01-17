@@ -1,4 +1,4 @@
-package com.transport.management.services;
+package com.transport.management.modules.viaje;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -6,8 +6,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.transport.management.entities.ViajeEntity;
-import com.transport.management.repositories.ViajeRepository;
 import com.transport.management.utils.abtractBase.BaseService;
 
 @Service

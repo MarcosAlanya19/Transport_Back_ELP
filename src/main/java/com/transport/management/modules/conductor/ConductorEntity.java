@@ -3,8 +3,8 @@ package com.transport.management.modules.conductor;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.transport.management.entities.ViajeEntity;
 import com.transport.management.modules.vehiculo.VehiculoEntity;
+import com.transport.management.modules.viaje.ViajeEntity;
 import com.transport.management.utils.abtractBase.BaseEntity;
 
 import jakarta.persistence.Column;
