@@ -1,4 +1,4 @@
-package com.transport.management.controllers;
+package com.transport.management.modules.ruta;
 
 import java.util.List;
 
@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.transport.management.entities.RutaEntity;
-import com.transport.management.services.RutaService;
 
 @RestController
 @RequestMapping("/rutas")

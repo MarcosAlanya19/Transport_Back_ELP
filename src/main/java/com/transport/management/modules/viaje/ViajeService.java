@@ -6,16 +6,16 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.transport.management.entities.RutaEntity;
 import com.transport.management.enums.StatusViajeEnum;
 import com.transport.management.modules.cliente.ClienteEntity;
 import com.transport.management.modules.cliente.ClienteRepository;
 import com.transport.management.modules.conductor.ConductorEntity;
 import com.transport.management.modules.conductor.ConductorRepository;
+import com.transport.management.modules.ruta.RutaEntity;
+import com.transport.management.modules.ruta.RutaRepository;
 import com.transport.management.modules.vehiculo.VehiculoEntity;
 import com.transport.management.modules.vehiculo.VehiculoRepository;
 import com.transport.management.modules.viaje.request.ViajeRequest;
-import com.transport.management.repositories.RutaRepository;
 import com.transport.management.utils.abtractBase.BaseService;
 
 import jakarta.transaction.Transactional;
