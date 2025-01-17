@@ -3,7 +3,6 @@ package com.transport.management.modules.auth;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.transport.management.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -17,6 +16,7 @@ import com.transport.management.modules.auth.requests.LoginRequest;
 import com.transport.management.modules.auth.requests.RegisterRequest;
 import com.transport.management.modules.auth.response.AuthResponse;
 import com.transport.management.modules.usuario.UsuarioEntity;
+import com.transport.management.modules.usuario.UsuarioRepository;
 import com.transport.management.utils.jwt.JwtService;
 
 @Service
